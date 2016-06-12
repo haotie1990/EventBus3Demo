@@ -12,6 +12,7 @@ import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 import org.greenrobot.eventbus.util.ThrowableFailureEvent;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
@@ -24,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
     private ThreadState mThreadState;
 
     private EventBus mEventBus;
+
+    @BindView(R.id.bt_register)
+    Button mBtRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
